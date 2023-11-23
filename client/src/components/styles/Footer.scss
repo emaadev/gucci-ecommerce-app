@@ -1,0 +1,131 @@
+$breakpoint-xl: 1280px;
+$breakpoint-l: 1024px;
+$breakpoint-m: 768px;
+$breakpoint-s: 420px;
+
+.footer {
+  margin: 50px 100px;
+
+  .top {
+    display: flex;
+    gap: 50px;
+
+    .item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 14px;
+
+      h1 {
+        font-size: 18px;
+        font-weight: 800;
+        color: #555;
+      }
+
+      span {
+        color: gray;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    .left {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        font-family: "EB Garamond", serif;
+        color: #000;
+        font-weight: bold;
+        font-size: 24px;
+      }
+
+      .copyright {
+        margin-left: 20px;
+        font-size: 12px;
+        color: gray;
+      }
+    }
+    .right {
+      img {
+        width: 350px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: $breakpoint-m){
+  .footer {
+    margin: 50px 100px;
+  
+    .top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 10px;
+  
+      .item {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+  
+        h1 {
+          font-size: 20px;
+          font-weight: 800;
+          color: #555;
+          margin-bottom: 5px;
+        }
+  
+        span {
+          color: gray;
+          cursor: pointer;
+        }
+      }
+    }
+  
+    .bottom {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 50px;
+
+      .left {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+  
+        .logo {
+          font-family: "EB Garamond", serif;
+          color: #000;
+          font-weight: bold;
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
+  
+        .copyright {
+          margin-left: 20px;
+          font-size: 12px;
+          color: gray;
+        }
+      }
+      .right {
+        img {
+          width: 350px;
+        }
+      }
+    }
+  }
+}

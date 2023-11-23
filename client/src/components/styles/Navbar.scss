@@ -1,0 +1,191 @@
+$breakpoint-xl: 1280px;
+$breakpoint-l: 1024px;
+$breakpoint-m: 768px;
+$breakpoint-s: 420px;
+
+.navbar {
+  height: 80px;
+  list-style: none;
+
+  .navList{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    font-size: 22px;
+
+    hr{
+      width: 80%;
+      color: #333;
+    }
+
+    .left{
+
+      .item:nth-child(1){
+        margin-bottom: 0;
+      }
+    }
+
+    .right{
+      display: none;
+    }
+    
+    ul{
+      list-style: none;
+      
+      li{
+        margin-bottom: 20px;
+        cursor: pointer;
+
+        &:hover{
+          opacity: .7;
+        }
+      }
+    }
+  }
+
+  .link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .brand {
+    font-family: "EB Garamond", serif;
+    font-size: 35px;
+    font-weight: 800;
+  }
+
+  .wrapper {
+    padding: 5px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .item {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-left: -30px;
+    }
+    
+    .center {
+      font-size: 30px;
+      letter-spacing: 2px;
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+      .burgerIcon{
+        display: none;
+        z-index: 1000;
+        transform: scale(1);
+        transition: all .5s ease;
+        
+        &:hover{
+          transform: scale(1.1);
+          z-index: 1000;
+        }
+      }
+
+      .icons {
+        display: flex;
+        gap: 15px;
+        color: #777;
+        cursor: pointer;
+
+        .cartIcon {
+          position: relative;
+
+          span {
+            font-size: 12px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #2879fe;
+            color: white;
+            position: absolute;
+            right: -10px;
+            top: -10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-xl) {
+  .navbar{
+
+    .wrapper{
+      padding: 5px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      .left{
+        display: none;
+      }
+      
+      
+      .right{
+        // display: none;
+        
+        .burgerIcon {
+          display: flex;
+          color: #777;
+          width: 30px;
+          border: none;
+          background: transparent;
+          cursor: pointer;
+          /* stroke: #000; */
+          /* stroke-width: 3px; */
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-m) {
+  .navbar{
+
+    .navList{
+
+      .right{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .wrapper{
+
+      .right{
+        // display: none;
+
+        .burgerIcon {
+          display: flex;
+        }
+
+        .item{
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+$breakpoint-xl: 1280px;
+$breakpoint-l: 1024px;
+$breakpoint-m: 768px;
+$breakpoint-s: 420px;
+
+.featuredProducts {
+    margin: 100px 150px;
+  
+    .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 50px;
+  
+      h2 {
+        flex: 2;
+        text-transform: capitalize;
+      }
+  
+      p{
+        flex:3;
+        color:gray
+      }
+    }
+  
+    .bottom{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+  
+@media (max-width: $breakpoint-m){
+  .featuredProducts {
+    margin: 100px 100px;
+
+    // .bottom{
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    //   justify-content: center;
+    //   gap: 50px;
+    // }
+  }
+}

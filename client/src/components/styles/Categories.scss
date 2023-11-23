@@ -1,0 +1,148 @@
+$breakpoint-xl: 1280px;
+$breakpoint-l: 1024px;
+$breakpoint-m: 768px;
+$breakpoint-s: 420px;
+
+.categories {
+    display: flex;
+    height: 80vh;
+    gap: 10px;
+    margin: 10px;
+  
+    .col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .col-l {
+      flex: 2;
+    }
+  
+    .row{
+      flex:1;
+      display: flex;
+      gap: 10px;
+      position: relative;
+      overflow: hidden;
+  
+      button{
+        position: absolute;
+        min-width: 100px;
+        width: 150px;
+        height: 50px;
+        padding: 10px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.397);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3.5px );
+        -webkit-backdrop-filter: blur( 4.5px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        text-transform: uppercase;
+        transition: all 1s ease;
+
+        &:hover{
+            background: rgb(255, 255, 255);
+        }
+
+        a {
+            font-weight: 600;
+            color: #333;
+        }
+      }
+  
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-position: center;
+        transition: all 1s ease;
+
+        &:hover{
+            width: 110%;
+            height: 110%;
+            background-position: center;
+        }
+      }
+    }
+  }
+
+@media (max-width: $breakpoint-m){
+  .categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    gap: 10px;
+    margin: 10px;
+  
+    .col {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .col-l {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .row{
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+  
+      button{
+        position: absolute;
+        min-width: 100px;
+        width: 150px;
+        height: 50px;
+        padding: 10px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.397);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3.5px );
+        -webkit-backdrop-filter: blur( 4.5px );
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        text-transform: uppercase;
+        transition: all 1s ease;
+
+        &:hover{
+            background: rgb(255, 255, 255);
+        }
+
+        a {
+            font-weight: 600;
+            color: #333;
+        }
+      }
+  
+      img{
+        object-fit: cover;
+        background-position: center;
+        transition: all 1s ease;
+        width: 100%;
+        height: 200px;
+
+        &:hover{
+            width: 110%;
+            height: 200px;
+            background-position: center;
+        }
+      }
+    }
+  }
+}

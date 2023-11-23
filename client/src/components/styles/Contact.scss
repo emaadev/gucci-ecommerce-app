@@ -1,0 +1,81 @@
+$breakpoint-xl: 1280px;
+$breakpoint-l: 1024px;
+$breakpoint-m: 768px;
+$breakpoint-s: 420px;
+
+.contact{
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+  
+    .wrapper{
+      width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      input{
+        padding: 10px;
+        border: none;
+        border-radius: 5px 0 0  5px;
+      }
+  
+      button{
+        padding: 10px;
+        color: white;
+        background: #666;
+        border-radius: 0 5px 5px 0;
+        border: none;
+        cursor: pointer;
+      }
+  
+      .icons{
+        display: flex;
+        gap: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+
+@media (max-width: $breakpoint-l){
+  .contact{
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+  
+    .wrapper{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: space-between;
+      font-size: 20px;
+  
+      input{
+        padding: 10px;
+        border: none;
+        border-radius: 5px 0 0  5px;
+      }
+  
+      button{
+        padding: 10px;
+        color: white;
+        background: #666;
+        border-radius: 0 5px 5px 0;
+        border: none;
+        cursor: pointer;
+      }
+  
+      .icons{
+        display: flex;
+        gap: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
